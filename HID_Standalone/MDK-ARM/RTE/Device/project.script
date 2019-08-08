@@ -1,0 +1,4 @@
+load STM32L496AGIx 
+project name STCubeGenerated 
+project toolchain "Makefile" 
+project path "C:\envox\STM32CubeL4-master\Projects\32L496GDISCOVERY\Applications\USB_Host\HID_Standalone\MDK-ARM\RTE\Device\STM32L496AGIx\" 
