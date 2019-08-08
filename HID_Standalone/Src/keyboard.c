@@ -105,7 +105,7 @@ static void USR_KEYBRD_Init(void)
   LCD_LOG_ClearTextZone();
   BSP_LCD_SetTextColor(LCD_COLOR_YELLOW);
   
-  BSP_LCD_DisplayStringAtLine(4, (uint8_t *)"Use Keyboard to tape characters:                                                            "); 
+  BSP_LCD_DisplayStringAtLine(4, (uint8_t *)"Use Keyboard to type characters:                                                            "); 
   BSP_LCD_SetTextColor(LCD_COLOR_WHITE);
   
   KeybrdCharYpos = KYBRD_FIRST_LINE;
