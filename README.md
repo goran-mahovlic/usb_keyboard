@@ -31,3 +31,21 @@ requirements, such as:
                   3: All messages and internal debug messages are shown
    By default debug messages are displayed on the debugger IO terminal; to redirect the Library
    messages on the LCD screen, lcd_log.c driver need to be added to the application sources.
+
+#### USB Host
+
+By the schematics(page 46):
+  
+https://www.st.com/content/ccc/resource/technical/document/user_manual/group0/1f/0f/b1/86/ef/c7/45/84/DM00353127/files/DM00353127.pdf/jcr:content/translations/en.DM00353127.pdf
+  
+OTGID pin is on PA10
+
+https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/usbh_conf.c#L58
+
+Interrupt when HOST device is inserted?
+
+https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/stm32l4xx_it.c#L148
+
+To leve all this defined, use port as virtual serial, if interrupt hapens switch to HOST
+
+But still we need to test, how to detect host is removed...
