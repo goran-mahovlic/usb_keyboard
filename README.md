@@ -59,3 +59,6 @@ USB host port events
 
 https://github.com/STMicroelectronics/STM32CubeL4/blob/d00623f229d09f3a1be050bdb0606b8870fa5d1c/Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c#L433
 
+CubeMx -- selecting dual role
+
+![Working on STM32L4](documentation/pic/Dual_Role.png)
