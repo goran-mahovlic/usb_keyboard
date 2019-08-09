@@ -18,6 +18,9 @@ https://github.com/STMicroelectronics/STM32CubeL4/tree/master/Projects/STM32L476
 For more details about the STM32Cube USB Host library, please refer to UM1720  
 "STM32Cube USB Host library".
 
+@note stm32l4xx_hal_conf.h -- Enable/Disable periferal
+
+@note need to search -> hpcd_USB_OTG_FS -- combined build still fail
 
 @par USB Library Configuration
 
