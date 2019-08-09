@@ -61,4 +61,8 @@ https://github.com/STMicroelectronics/STM32CubeL4/blob/d00623f229d09f3a1be050bdb
 
 CubeMx -- selecting dual role
 
-![Working on STM32L4](documentation/pic/Dual_Role.png)
+![Selecting dual role](documentation/pic/Dual_Role.png)
+
+Dual role does not generate code
+
+https://community.st.com/s/question/0D50X0000APbLwS/cubemx-50-usb-otg-does-not-work
