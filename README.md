@@ -49,3 +49,8 @@ https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/st
 To leve all this defined, use port as virtual serial, if interrupt hapens switch to HOST
 
 But still we need to test, how to detect host is removed...
+
+USB host port events
+
+https://github.com/STMicroelectronics/STM32CubeL4/blob/d00623f229d09f3a1be050bdb0606b8870fa5d1c/Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c#L433
+
