@@ -42,13 +42,18 @@ OTGID pin is on PA10
 
 https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/usbh_conf.c#L58
 
-Interrupt when HOST device is inserted?
+Tested with the scope:
+
+    PA10 is pullup by default
+    If OTG cable is connected (no mather if keyboard is connected) PA10 goes LOW
+    When OTG cable is removed PA10 goes HIGH
+    If computes is connected PA10 stays HIGH
 
 https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/stm32l4xx_it.c#L148
 
-To leve all this defined, use port as virtual serial, if interrupt hapens switch to HOST
+To check:
 
-But still we need to test, how to detect host is removed...
+    [] Leve all this defined, use port as virtual serial, if interrupt hapens check PA10 status and switch SERIAL/HOST
 
 USB host port events
 
