@@ -18,6 +18,9 @@ https://github.com/STMicroelectronics/STM32CubeL4/tree/master/Projects/STM32L476
 For more details about the STM32Cube USB Host library, please refer to UM1720  
 "STM32Cube USB Host library".
 
+@note stm32l4xx_hal_conf.h -- Enable/Disable periferal
+
+@note need to search -> hpcd_USB_OTG_FS -- combined build still fail
 
 @par USB Library Configuration
 
@@ -49,6 +52,24 @@ Tested with the scope:
     When OTG cable is removed PA10 goes HIGH
     If computes is connected PA10 stays HIGH
 
+Tested with debugger:
+
+    Using ST code for keyboard
+        Keyboard connected
+            HAL_HCD_Connect_Callback()
+        Keyboard dissconected
+            HAL_HCD_Disconnect_Callback()
+            
+    Using generated code for device only
+        Computer connected
+            HAL_PCD_ConnectCallback()
+        Computer dissconnected
+            HAL_PCD_DisconnectCallback()
+        Keyboard connected
+            Nothing happens and that is great!
+            
+ We can use upper interrupts to SET flag HOST/DEVICE
+
 https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/stm32l4xx_it.c#L148
 
 To check:
@@ -62,6 +83,10 @@ https://github.com/STMicroelectronics/STM32CubeL4/blob/d00623f229d09f3a1be050bdb
 CubeMx -- selecting dual role
 
 ![Selecting dual role](documentation/pic/Dual_Role.png)
+
+Tried to install and generate with STM32CubeIDE
+
+      Same thing happens -- it does not generate code
 
 Dual role does not generate code
 
