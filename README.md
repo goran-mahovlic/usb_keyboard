@@ -53,6 +53,7 @@ Tested with the scope:
     If computes is connected PA10 stays HIGH
 
 Tested with debugger:
+
     Using ST code for keyboard
         Keyboard connected
             HAL_HCD_Connect_Callback()
