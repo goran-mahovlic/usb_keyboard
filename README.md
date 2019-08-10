@@ -52,6 +52,15 @@ Tested with the scope:
     When OTG cable is removed PA10 goes HIGH
     If computes is connected PA10 stays HIGH
 
+Tested with debugger:
+    Using ST code for keyboard
+        Keyboard connected
+            HAL_HCD_Connect_Callback()
+        Keyboard dissconected
+            HAL_HCD_Disconnect_Callback()
+            
+ We can use this to SET flag HOST/DEVICE
+
 https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/stm32l4xx_it.c#L148
 
 To check:
