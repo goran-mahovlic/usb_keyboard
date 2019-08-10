@@ -140,8 +140,6 @@ void Error_Handler(void);
 #define USB_OTGFS_DP_GPIO_Port GPIOA
 #define JOY_SEL_Pin GPIO_PIN_13
 #define JOY_SEL_GPIO_Port GPIOC
-#define SAI1_SDA_Pin GPIO_PIN_6
-#define SAI1_SDA_GPIO_Port GPIOE
 #define DCMI_D6_Pin GPIO_PIN_5
 #define DCMI_D6_GPIO_Port GPIOE
 #define UART1_CTS_Pin GPIO_PIN_11
