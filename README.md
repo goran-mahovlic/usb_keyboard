@@ -76,6 +76,10 @@ CubeMx -- selecting dual role
 
 ![Selecting dual role](documentation/pic/Dual_Role.png)
 
+Tried to install and generate with STM32CubeIDE
+
+      Same thing happens -- it does not generate code
+
 Dual role does not generate code
 
 https://community.st.com/s/question/0D50X0000APbLwS/cubemx-50-usb-otg-does-not-work
