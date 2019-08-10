@@ -60,7 +60,15 @@ Tested with debugger:
         Keyboard dissconected
             HAL_HCD_Disconnect_Callback()
             
- We can use this to SET flag HOST/DEVICE
+    Using generated code for device only
+        Computer connected
+            HAL_PCD_ConnectCallback()
+        Computer dissconnected
+            HAL_PCD_DisconnectCallback()
+        Keyboard connected
+            Nothing happens and that is great!
+            
+ We can upper interrupts to SET flag HOST/DEVICE
 
 https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/stm32l4xx_it.c#L148
 
