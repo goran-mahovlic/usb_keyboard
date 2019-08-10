@@ -68,7 +68,7 @@ Tested with debugger:
         Keyboard connected
             Nothing happens and that is great!
             
- We can upper interrupts to SET flag HOST/DEVICE
+ We can use upper interrupts to SET flag HOST/DEVICE
 
 https://github.com/goran-mahovlic/usb_keyboard/blob/master/HID_Standalone/Src/stm32l4xx_it.c#L148
 
