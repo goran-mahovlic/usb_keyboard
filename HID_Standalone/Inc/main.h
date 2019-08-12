@@ -86,7 +86,7 @@ extern uint8_t prev_select;
 /* Exported functions ------------------------------------------------------- */
 void Toggle_Leds(void);
 void HID_SelectItem(uint8_t **menu, uint8_t item);
-void HID_MenuInit(void);
+
 void HID_MenuProcess(void);
 void HID_MouseMenuProcess(void);
 void HID_KeyboardMenuProcess(void);
