@@ -92,6 +92,8 @@ Dual role does not generate code
 
 https://community.st.com/s/question/0D50X0000APbLwS/cubemx-50-usb-otg-does-not-work
 
+https://community.arm.com/developer/tools-software/tools/f/keil-forum/43245/usb-dual-role-otg-on-stm32f4
+
 Not empty here:
 
 https://github.com/CalPolyRobotics/IGVC-OlympusFirmware/blob/a1b29818d08725b2a760780ded1b70db80cdf0b2/master_boot/peripherals/USB/usb_otg.c
